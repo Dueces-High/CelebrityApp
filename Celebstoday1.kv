@@ -1,0 +1,1797 @@
+
+
+<WindowManager>:
+    Menu:
+    Question1:
+        id: question1
+        name: 'question1'
+    Question2:
+        id: question2
+        name: 'question2'
+    Question3:
+        id: question3
+        name: 'question3'
+    Question4:
+        id: question4
+        name: 'question4'
+    Question5:
+        id: question5
+        name: 'question5'
+    Question6:
+        id: question6
+        name: 'question6'
+    Question7:
+        id: question7
+        name: 'question7'
+    Question8:
+        id: question8
+        name: 'question8'
+    Question9:
+        id: question9
+        name: 'question9'
+    Question10:
+        id: question10
+        name: 'question10'
+    Question11:
+        id: question11
+        name: 'question11'
+    Question12:
+        id: question12
+        name: 'question12'
+    Question13:
+        id: question13
+        name: 'question13'
+    Question14:
+        id: question14
+        name: 'question14'
+    EndGame:
+        id: EndGame
+        name: 'EndGame'
+
+
+<Question1>:
+    BoxLayout:
+        padding: 20
+        spacing: 10
+        orientation: "vertical"
+
+        size: root.width, root.height
+
+        orientation: "vertical"
+        Image:
+            id: llphoto
+            source: "LLCOOLJ2.jpg"
+            size_hint: 1, .5
+
+        Button:
+            markup: True
+            text:"[size=25][b]Hint[/b][/size]"
+            size_hint: .22, .06
+            pos_hint: {"x": .38}
+            on_release: root.hint1()
+            on_press: root.hint_counter()
+
+
+        Label:
+            id: Clear
+            multiline: False
+            text:""
+            size_hint: 1, .1
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "O"
+                size_hint: (.1, 1)
+                on_press: root.letterpress2("O")
+
+
+            Button:
+                text: "C"
+                size_hint: (.1, 1)
+                on_press: root.letterpress2("C")
+
+            Button:
+                text: "L"
+                size_hint: (.1, 1)
+                on_press: root.letterpress2("L")
+
+            Button:
+                text: "J"
+                size_hint: (.1, 1)
+                on_press: root.letterpress2("J")
+
+            Button:
+                text: "O"
+                size_hint: (.1, 1)
+                on_press: root.letterpress2("O")
+
+
+
+            Button:
+                text: "L"
+                size_hint: (.1, 1)
+                on_press: root.letterpress2("L")
+
+
+            Button:
+                text: "L"
+                size_hint: (.1, 1)
+                on_press: root.letterpress2("L")
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "Space"
+                size_hint: 1, 1
+                on_press: root.space(" ")
+            Button:
+                text: "Clear"
+                size_hint: 1, 1
+                on_press: root.clear()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "Enter"
+                size_hint: .75, 1
+                on_press: root.questionpass()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: .45, .1
+            pos_hint: { "x": .30}
+
+            Label:
+                text: "Hints Left:"
+                size_hint: .25, 1
+
+            Label:
+                id: KivyLimit
+                text: root.KivyLimitkv
+                size_hint: .1, 1
+
+
+
+
+<Question2>:
+    BoxLayout:
+        padding: 20
+        spacing: 10
+        orientation: "vertical"
+
+        size: root.width, root.height
+
+        orientation: "vertical"
+        Image:
+            id: TD
+            source: "TD.jpeg"
+            size_hint: 1, .5
+
+        Button:
+            markup: True
+            text:"[size=25][b]Hint[/b][/size]"
+            size_hint: .22, .06
+            pos_hint: {"x": .38}
+            on_release: root.hint1()
+            on_press: root.hint_counter()
+
+
+        Label:
+            id: Clear2
+            multiline: False
+            text:""
+            size_hint: 1, .1
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "N"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("N")
+
+
+            Button:
+                text: "T"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("T")
+
+            Button:
+                text: "O"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("O")
+
+            Button:
+                text: "Y"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("Y")
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "Z"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("Z")
+
+
+
+            Button:
+                text: "A"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("A")
+
+
+
+            Button:
+                text: "N"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("N")
+
+            Button:
+                text: "A"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("A")
+
+            Button:
+                text: "D"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("D")
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "Space"
+                size_hint: 1, 1
+                on_press: root.space(" ")
+            Button:
+                text: "Clear"
+                size_hint: 1, 1
+                on_press: root.clear()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "Enter"
+                size_hint: .75, 1
+                on_press: root.questionpass()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: .45, .1
+            pos_hint: { "x": .30}
+
+            Label:
+                text: "Hints Left:"
+                size_hint: .25, 1
+
+            Label:
+                id: KivyLimit2
+                text: str(root.KivyLimit2)
+                size_hint: .1, 1
+
+
+
+
+<Question3>:
+    BoxLayout:
+        padding: 20
+        spacing: 10
+        orientation: "vertical"
+
+        size: root.width, root.height
+
+        orientation: "vertical"
+        Image:
+            id: balky
+            source: "balky.jpeg"
+            size_hint: 1, .5
+
+        Button:
+            markup: True
+            text:"[size=25][b]Hint[/b][/size]"
+            size_hint: .22, .06
+            pos_hint: {"x": .38}
+            on_release: root.hint1()
+            on_press: root.hint_counter()
+
+
+        Label:
+            id: Clear3
+            multiline: False
+            text:""
+            size_hint: 1, .1
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "A"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("A")
+
+
+            Button:
+                text: "Y"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("Y")
+
+            Button:
+                text: "B"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("B")
+
+            Button:
+                text: "L"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("L")
+
+            Button:
+                text: "K"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("K")
+
+
+
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "Space"
+                size_hint: 1, 1
+                on_press: root.space(" ")
+            Button:
+                text: "Clear"
+                size_hint: 1, 1
+                on_press: root.clear()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "Enter"
+                size_hint: .75, 1
+                on_press: root.questionpass()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: .45, .1
+            pos_hint: { "x": .30}
+
+            Label:
+                text: "Hints Left:"
+                size_hint: .25, 1
+
+            Label:
+                id: KivyLimit3
+                text: str(root.KivyLimit3)
+                size_hint: .1, 1
+
+
+
+
+
+
+<Question4>:
+    BoxLayout:
+        padding: 20
+        spacing: 10
+        orientation: "vertical"
+
+        size: root.width, root.height
+
+        orientation: "vertical"
+        Image:
+            id: ricky
+            source: "ricky.jpeg"
+            size_hint: 1, .5
+
+        Button:
+            markup: True
+            text:"[size=25][b]Hint[/b][/size]"
+            size_hint: .22, .06
+            pos_hint: {"x": .38}
+            on_release: root.hint1()
+            on_press: root.hint_counter()
+
+
+        Label:
+            id: Clear4
+            multiline: False
+            text:""
+            size_hint: 1, .1
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "K"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("K")
+
+
+            Button:
+                text: "R"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("R")
+
+            Button:
+                text: "C"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("C")
+
+            Button:
+                text: "I"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("I")
+
+            Button:
+                text: "I"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("I")
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "K"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("K")
+            Button:
+                text: "E"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("E")
+            Button:
+                text: "L"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("L")
+            Button:
+                text: "A"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("A")
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "Space"
+                size_hint: 1, 1
+                on_press: root.space(" ")
+            Button:
+                text: "Clear"
+                size_hint: 1, 1
+                on_press: root.clear()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "Enter"
+                size_hint: .75, 1
+                on_press: root.questionpass()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: .45, .1
+            pos_hint: { "x": .30}
+
+            Label:
+                text: "Hints Left:"
+                size_hint: .25, 1
+
+            Label:
+                id: KivyLimit4
+                text: str(root.KivyLimit4)
+                size_hint: .1, 1
+
+
+
+
+
+
+
+<Question5>:
+    BoxLayout:
+        padding: 20
+        spacing: 10
+        orientation: "vertical"
+
+        size: root.width, root.height
+
+        orientation: "vertical"
+        Image:
+            id: ricky
+            source: "tori.jpeg"
+            size_hint: 1, .4
+
+        Button:
+            markup: True
+            text:"[size=25][b]Hint[/b][/size]"
+            size_hint: .22, .06
+            pos_hint: {"x": .38}
+            on_release: root.hint1()
+            on_press: root.hint_counter()
+
+
+        Label:
+            id: Clear5
+            multiline: False
+            text:""
+            size_hint: 1, .1
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+
+            Button:
+                text: "R"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("R")
+
+
+            Button:
+                text: "I"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("I")
+
+            Button:
+                text: "T"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("T")
+
+            Button:
+                text: "O"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("O")
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "L"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("L")
+            Button:
+                text: "P"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("P")
+            Button:
+                text: "G"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("G")
+            Button:
+                text: "L"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("L")
+            Button:
+                text: "S"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("S")
+            Button:
+                text: "I"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("I")
+            Button:
+                text: "N"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("N")
+            Button:
+                text: "E"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("E")
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "Space"
+                size_hint: 1, 1
+                on_press: root.space(" ")
+            Button:
+                text: "Clear"
+                size_hint: 1, 1
+                on_press: root.clear()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "Enter"
+                size_hint: .75, 1
+                on_press: root.questionpass()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: .45, .1
+            pos_hint: { "x": .30}
+
+            Label:
+                text: "Hints Left:"
+                size_hint: .25, 1
+
+            Label:
+                id: KivyLimit5
+                text: str(root.KivyLimit5)
+                size_hint: .1, 1
+
+
+
+
+
+
+
+
+<Question6>:
+    BoxLayout:
+        padding: 20
+        spacing: 10
+        orientation: "vertical"
+
+        size: root.width, root.height
+
+        orientation: "vertical"
+        Image:
+            id: kieth
+            source: "kieth.jpeg"
+            size_hint: 1, .5
+
+        Button:
+            markup: True
+            text:"[size=25][b]Hint[/b][/size]"
+            size_hint: .22, .06
+            pos_hint: {"x": .38}
+            on_release: root.hint1()
+            on_press: root.hint_counter()
+
+
+        Label:
+            id: Clear6
+            multiline: False
+            text:""
+            size_hint: 1, .1
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "T"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("T")
+
+
+            Button:
+                text: "I"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("I")
+
+            Button:
+                text: "H"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("H")
+
+            Button:
+                text: "K"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("K")
+
+            Button:
+                text: "E"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("E")
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "A"
+                size_hint: (.16, 1)
+                on_press: root.letterpress3("A")
+            Button:
+                text: "N"
+                size_hint: (.16, 1)
+                on_press: root.letterpress3("N")
+            Button:
+                text: "O"
+                size_hint: (.16, 1)
+                on_press: root.letterpress3("O")
+            Button:
+                text: "G"
+                size_hint: (.16, 1)
+                on_press: root.letterpress3("G")
+            Button:
+                text: "C"
+                size_hint: (.16, 1)
+                on_press: root.letterpress3("C")
+            Button:
+                text: "O"
+                size_hint: (.16, 1)
+                on_press: root.letterpress3("O")
+
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "Space"
+                size_hint: 1, 1
+                on_press: root.space(" ")
+            Button:
+                text: "Clear"
+                size_hint: 1, 1
+                on_press: root.clear()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "Enter"
+                size_hint: .75, 1
+                on_press: root.questionpass()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: .45, .1
+            pos_hint: { "x": .30}
+
+            Label:
+                text: "Hints Left:"
+                size_hint: .25, 1
+
+            Label:
+                id: KivyLimit6
+                text: str(root.KivyLimit6)
+                size_hint: .1, 1
+
+
+
+
+<Question7>:
+    BoxLayout:
+        padding: 20
+        spacing: 10
+        orientation: "vertical"
+
+        size: root.width, root.height
+
+        orientation: "vertical"
+        Image:
+            id: kieth
+            source: "NANCY.jpg"
+            size_hint: 1, .5
+
+        Button:
+            markup: True
+            text:"[size=25][b]Hint[/b][/size]"
+            size_hint: .22, .06
+            pos_hint: {"x": .38}
+            on_release: root.hint1()
+            on_press: root.hint_counter()
+
+
+        Label:
+            id: Clear7
+            multiline: False
+            text:""
+            size_hint: 1, .1
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "A"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("A")
+
+
+            Button:
+                text: "Y"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("Y")
+
+            Button:
+                text: "C"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("C")
+
+            Button:
+                text: "N"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("N")
+
+            Button:
+                text: "N"
+                size_hint: (.1, 1)
+                on_press: root.letterpress3("N")
+
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "Space"
+                size_hint: 1, 1
+                on_press: root.space(" ")
+            Button:
+                text: "Clear"
+                size_hint: 1, 1
+                on_press: root.clear()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "Enter"
+                size_hint: .75, 1
+                on_press: root.questionpass()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: .45, .1
+            pos_hint: { "x": .30}
+
+            Label:
+                text: "Hints Left:"
+                size_hint: .25, 1
+
+            Label:
+                id: KivyLimit7
+                text: str(root.KivyLimit7)
+                size_hint: .1, 1
+
+
+<Question8>:
+    BoxLayout:
+        padding: 20
+        spacing: 10
+        orientation: "vertical"
+
+        size: root.width, root.height
+
+        orientation: "vertical"
+        Image:
+            id: kieth
+            source: "stone.jpeg"
+            size_hint: 1, .5
+
+        Button:
+            markup: True
+            text:"[size=25][b]Hint[/b][/size]"
+            size_hint: .22, .06
+            pos_hint: {"x": .38}
+            on_release: root.hint1()
+            on_press: root.hint_counter()
+
+
+        Label:
+            id: Clear8
+            multiline: False
+            text:""
+            size_hint: 1, .1
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "R"
+                size_hint: (.16, 1)
+                on_press: root.letterpress3("R")
+
+
+            Button:
+                text: "N"
+                size_hint: (.16, 1)
+                on_press: root.letterpress3("N")
+
+            Button:
+                text: "A"
+                size_hint: (.16, 1)
+                on_press: root.letterpress3("A")
+
+            Button:
+                text: "S"
+                size_hint: (.16, 1)
+                on_press: root.letterpress3("S")
+
+            Button:
+                text: "O"
+                size_hint: (.16, 1)
+                on_press: root.letterpress3("O")
+
+            Button:
+                text: "H"
+                size_hint: (.16, 1)
+                on_press: root.letterpress3("H")
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "O"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("O")
+
+            Button:
+                text: "E"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("E")
+
+            Button:
+                text: "S"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("S")
+
+            Button:
+                text: "N"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("N")
+
+            Button:
+                text: "T"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("T")
+
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "Space"
+                size_hint: 1, 1
+                on_press: root.space(" ")
+            Button:
+                text: "Clear"
+                size_hint: 1, 1
+                on_press: root.clear()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "Enter"
+                size_hint: .75, 1
+                on_press: root.questionpass()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: .45, .1
+            pos_hint: { "x": .30}
+
+            Label:
+                text: "Hints Left:"
+                size_hint: .25, 1
+
+            Label:
+                id: KivyLimit8
+                text: str(root.KivyLimit8)
+                size_hint: .1, 1
+
+<Question9>:
+    BoxLayout:
+        padding: 20
+        spacing: 10
+        orientation: "vertical"
+
+        size: root.width, root.height
+
+        orientation: "vertical"
+        Image:
+            id: axel
+            source: "AXEL.jpeg"
+            size_hint: 1, .5
+
+        Button:
+            markup: True
+            text:"[size=25][b]Hint[/b][/size]"
+            size_hint: .22, .06
+            pos_hint: {"x": .38}
+            on_release: root.hint1()
+            on_press: root.hint_counter()
+
+
+        Label:
+            id: Clear9
+            multiline: False
+            text:""
+            size_hint: 1, .1
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "E"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("E")
+
+
+            Button:
+                text: "L"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("L")
+
+            Button:
+                text: "A"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("A")
+
+            Button:
+                text: "X"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("X")
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "O"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("O")
+
+            Button:
+                text: "S"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("S")
+
+            Button:
+                text: "R"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("R")
+
+            Button:
+                text: "E"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("E")
+
+
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "Space"
+                size_hint: 1, 1
+                on_press: root.space(" ")
+            Button:
+                text: "Clear"
+                size_hint: 1, 1
+                on_press: root.clear()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "Enter"
+                size_hint: .75, 1
+                on_press: root.questionpass()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: .45, .1
+            pos_hint: { "x": .30}
+
+            Label:
+                text: "Hints Left:"
+                size_hint: .25, 1
+
+            Label:
+                id: KivyLimit9
+                text: str(root.KivyLimit9)
+                size_hint: .1, 1
+
+<Question10>:
+    BoxLayout:
+        padding: 20
+        spacing: 10
+        orientation: "vertical"
+
+        size: root.width, root.height
+
+        orientation: "vertical"
+        Image:
+            id: axel
+            source: "chevy.jpg"
+            size_hint: 1, .5
+
+        Button:
+            markup: True
+            text:"[size=25][b]Hint[/b][/size]"
+            size_hint: .22, .06
+            pos_hint: {"x": .38}
+            on_release: root.hint1()
+            on_press: root.hint_counter()
+
+
+        Label:
+            id: Clear10
+            multiline: False
+            text:""
+            size_hint: 1, .1
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "E"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("E")
+
+
+            Button:
+                text: "Y"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("Y")
+
+            Button:
+                text: "C"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("C")
+
+            Button:
+                text: "V"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("V")
+
+            Button:
+                text: "H"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("H")
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "S"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("S")
+
+            Button:
+                text: "E"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("E")
+
+            Button:
+                text: "A"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("A")
+            Button:
+                text: "C"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("C")
+
+            Button:
+                text: "H"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("H")
+
+
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "Space"
+                size_hint: 1, 1
+                on_press: root.space(" ")
+            Button:
+                text: "Clear"
+                size_hint: 1, 1
+                on_press: root.clear()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "Enter"
+                size_hint: .75, 1
+                on_press: root.questionpass()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: .45, .1
+            pos_hint: { "x": .30}
+
+            Label:
+                text: "Hints Left:"
+                size_hint: .25, 1
+
+            Label:
+                id: KivyLimit10
+                text: str(root.KivyLimit10)
+                size_hint: .1, 1
+
+<Question11>:
+    BoxLayout:
+        padding: 20
+        spacing: 10
+        orientation: "vertical"
+
+        size: root.width, root.height
+
+        orientation: "vertical"
+        Image:
+            id: Brandon
+            source: "Brandon.jpeg"
+            size_hint: 1, .5
+
+        Button:
+            markup: True
+            text:"[size=25][b]Hint[/b][/size]"
+            size_hint: .22, .06
+            pos_hint: {"x": .38}
+            on_release: root.hint1()
+            on_press: root.hint_counter()
+
+
+        Label:
+            id: Clear11
+            multiline: False
+            text:""
+            size_hint: 1, .1
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "A"
+                size_hint: (.14, 1)
+                on_press: root.letterpress3("A")
+
+
+            Button:
+                text: "D"
+                size_hint: (.14, 1)
+                on_press: root.letterpress3("D")
+
+            Button:
+                text: "B"
+                size_hint: (.14, 1)
+                on_press: root.letterpress3("B")
+
+            Button:
+                text: "N"
+                size_hint: (.14, 1)
+                on_press: root.letterpress3("N")
+
+            Button:
+                text: "R"
+                size_hint: (.14, 1)
+                on_press: root.letterpress3("R")
+
+            Button:
+                text: "N"
+                size_hint: (.14, 1)
+                on_press: root.letterpress3("N")
+
+            Button:
+                text: "O"
+                size_hint: (.14, 1)
+                on_press: root.letterpress3("O")
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "R"
+                size_hint: (.14, 1)
+                on_press: root.letterpress3("R")
+            Button:
+                text: "R"
+                size_hint: (.14, 1)
+                on_press: root.letterpress3("R")
+
+            Button:
+                text: "A"
+                size_hint: (.14, 1)
+                on_press: root.letterpress3("A")
+            Button:
+                text: "S"
+                size_hint: (.14, 1)
+                on_press: root.letterpress3("S")
+            Button:
+                text: "E"
+                size_hint: (.14, 1)
+                on_press: root.letterpress3("E")
+
+            Button:
+                text: "I"
+                size_hint: (.14, 1)
+                on_press: root.letterpress3("I")
+            Button:
+                text: "F"
+                size_hint: (.14, 1)
+                on_press: root.letterpress3("F")
+
+
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "Space"
+                size_hint: 1, 1
+                on_press: root.space(" ")
+            Button:
+                text: "Clear"
+                size_hint: 1, 1
+                on_press: root.clear()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "Enter"
+                size_hint: .75, 1
+                on_press: root.questionpass()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: .45, .1
+            pos_hint: { "x": .30}
+
+            Label:
+                text: "Hints Left:"
+                size_hint: .25, 1
+
+            Label:
+                id: KivyLimit11
+                text: str(root.KivyLimit11)
+                size_hint: .1, 1
+
+<Question12>:
+    BoxLayout:
+        padding: 20
+        spacing: 10
+        orientation: "vertical"
+
+        size: root.width, root.height
+
+        orientation: "vertical"
+        Image:
+            id: geena
+            source: "geena.jpeg"
+            size_hint: 1, .5
+
+        Button:
+            markup: True
+            text:"[size=25][b]Hint[/b][/size]"
+            size_hint: .22, .06
+            pos_hint: {"x": .38}
+            on_release: root.hint1()
+            on_press: root.hint_counter()
+
+
+        Label:
+            id: Clear12
+            multiline: False
+            text:""
+            size_hint: 1, .1
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "E"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("E")
+
+
+            Button:
+                text: "A"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("A")
+
+            Button:
+                text: "N"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("N")
+
+            Button:
+                text: "G"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("G")
+
+            Button:
+                text: "E"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("E")
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "S"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("S")
+            Button:
+                text: "V"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("V")
+
+            Button:
+                text: "A"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("A")
+            Button:
+                text: "D"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("D")
+
+            Button:
+                text: "I"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("I")
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "Space"
+                size_hint: 1, 1
+                on_press: root.space(" ")
+            Button:
+                text: "Clear"
+                size_hint: 1, 1
+                on_press: root.clear()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "Enter"
+                size_hint: .75, 1
+                on_press: root.questionpass()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: .45, .1
+            pos_hint: { "x": .30}
+
+            Label:
+                text: "Hints Left:"
+                size_hint: .25, 1
+
+            Label:
+                id: KivyLimit12
+                text: str(root.KivyLimit12)
+                size_hint: .1, 1
+
+<Question13>:
+    BoxLayout:
+        padding: 20
+        spacing: 10
+        orientation: "vertical"
+
+        size: root.width, root.height
+
+        orientation: "vertical"
+        Image:
+            id: davidletterman
+            source: "daveletterman.jpeg"
+            size_hint: 1, .5
+
+        Button:
+            markup: True
+            text:"[size=25][b]Hint[/b][/size]"
+            size_hint: .22, .06
+            pos_hint: {"x": .38}
+            on_release: root.hint1()
+            on_press: root.hint_counter()
+
+
+        Label:
+            id: Clear13
+            multiline: False
+            text:""
+            size_hint: 1, .1
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "V"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("V")
+
+
+            Button:
+                text: "D"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("D")
+
+            Button:
+                text: "I"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("I")
+
+            Button:
+                text: "D"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("D")
+
+            Button:
+                text: "A"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("A")
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "T"
+                size_hint: (.11, 1)
+                on_press: root.letterpress3("T")
+            Button:
+                text: "M"
+                size_hint: (.11, 1)
+                on_press: root.letterpress3("M")
+
+            Button:
+                text: "N"
+                size_hint: (.11, 1)
+                on_press: root.letterpress3("N")
+            Button:
+                text: "R"
+                size_hint: (.11, 1)
+                on_press: root.letterpress3("R")
+
+            Button:
+                text: "T"
+                size_hint: (.11, 1)
+                on_press: root.letterpress3("T")
+
+            Button:
+                text: "L"
+                size_hint: (.11, 1)
+                on_press: root.letterpress3("L")
+            Button:
+                text: "E"
+                size_hint: (.11, 1)
+                on_press: root.letterpress3("E")
+            Button:
+                text: "E"
+                size_hint: (.11, 1)
+                on_press: root.letterpress3("E")
+            Button:
+                text: "A"
+                size_hint: (.11, 1)
+                on_press: root.letterpress3("A")
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "Space"
+                size_hint: 1, 1
+                on_press: root.space(" ")
+            Button:
+                text: "Clear"
+                size_hint: 1, 1
+                on_press: root.clear()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "Enter"
+                size_hint: .75, 1
+                on_press: root.questionpass()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: .45, .1
+            pos_hint: { "x": .30}
+
+            Label:
+                text: "Hints Left:"
+                size_hint: .25, 1
+
+            Label:
+                id: KivyLimit13
+                text: str(root.KivyLimit13)
+                size_hint: .1, 1
+
+<Question14>:
+    BoxLayout:
+        padding: 20
+        spacing: 10
+        orientation: "vertical"
+
+        size: root.width, root.height
+
+        orientation: "vertical"
+        Image:
+            id: EDDIE
+            source: "eddie.jpg"
+            size_hint: 1, .5
+
+        Button:
+            markup: True
+            text:"[size=25][b]Hint[/b][/size]"
+            size_hint: .22, .06
+            pos_hint: {"x": .38}
+            on_release: root.hint1()
+            on_press: root.hint_counter()
+
+
+        Label:
+            id: Clear14
+            multiline: False
+            text:""
+            size_hint: 1, .1
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: .5, .1
+            Button:
+                text: "E"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("E")
+
+
+            Button:
+                text: "D"
+                size_hint: (.2, 1)
+                on_press: root.letterpress3("D")
+
+
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "R"
+                size_hint: (.15, 1)
+                on_press: root.letterpress3("R")
+            Button:
+                text: "G"
+                size_hint: (.15, 1)
+                on_press: root.letterpress3("G")
+
+            Button:
+                text: "U"
+                size_hint: (.15, 1)
+                on_press: root.letterpress3("U")
+            Button:
+                text: "N"
+                size_hint: (.15, 1)
+                on_press: root.letterpress3("N")
+
+            Button:
+                text: "F"
+                size_hint: (.15, 1)
+                on_press: root.letterpress3("F")
+
+            Button:
+                text: "O"
+                size_hint: (.15, 1)
+                on_press: root.letterpress3("O")
+            Button:
+                text: "L"
+                size_hint: (.15, 1)
+                on_press: root.letterpress3("L")
+
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            Button:
+                text: "Space"
+                size_hint: 1, 1
+                on_press: root.space(" ")
+            Button:
+                text: "Clear"
+                size_hint: 1, 1
+                on_press: root.clear()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+            Button:
+                text: "Enter"
+                size_hint: .75, 1
+                on_press: root.questionpass()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: .45, .1
+            pos_hint: { "x": .30}
+
+            Label:
+                text: "Hints Left:"
+                size_hint: .25, 1
+
+            Label:
+                id: KivyLimit14
+                text: str(root.KivyLimit14)
+                size_hint: .1, 1
+
+
+
+
+<EndGame>:
+
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'washedupicon.png'
+    Label:
+        markup: True
+
+        text:"[color=#f207a8][b]You Win[/b][/color]"
+        font_size: 50
+        pos_hint: {"x": .0, "y": .2}
+        outline_color: 140, 17, 52
+        outline_width: 7
+
+    Label:
+        markup: True
+        text:"[color=#f207a8][b]Thanks for Playing [/b][/color]"
+        font_size: 22
+        pos_hint: {"x": 0, "y": .1}
+        outline_color: 140, 17, 52
+        outline_width: 7
+
+
+    Button:
+        markup: True
+        text:"[size=20][b]Start New Game[/b][/size]"
+        size_hint: .32, .15
+        pos_hint: {"x": .35, "y": .1}
+        color: (0,0,0)
+        background_color: 255, 0, 0
+        on_press: root.manager.current = "question1"
+
+
+
+<Menu>:
+
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'Menu.png'
+
+
+    Button:
+        markup: True
+        text:"[size=30][b]Start Game[/b][/size]"
+        size_hint: .3, .15
+        pos_hint: {"x": .33, "y": .6}
+        background_color: 255, 0, 0
+        on_press: root.manager.current = "question1"
+
+
